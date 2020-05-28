@@ -1,4 +1,4 @@
-/*  Writer: EvenNewbieImthePro 
+/*  Writer: HandsomeChoco 
     Date: 25, May, 2020
     Content: Implement sorting element by sorting algorithms. 
 */
