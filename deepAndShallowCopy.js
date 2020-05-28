@@ -35,6 +35,7 @@ originalArr[0] = 100;
 console.log(originalArr); // [100, 2, 3, 4]
 console.log(newArr); // [100, 2, 3, 4]
 
+
 function cloneObj(obj) {
     var output = {};
     for(var i=0 in obj) {
@@ -42,6 +43,8 @@ function cloneObj(obj) {
     }
     return output;
 }
+
+
 
 var originalObj = { a: 10, b: 20 };
 var referenced = cloneObj(originalObj);
@@ -64,3 +67,5 @@ var tonyClone = tony;
 console.log(tony);
 tony.height =  '173cm';
 console.log(tonyClone, tony);
+
+module.exports;
