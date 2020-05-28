@@ -1,3 +1,9 @@
+/*  Writer: HandsomeChoco
+    Date: 25, May, 2020
+    Content: Learn about different between deep copy and shallow copy.
+*/
+
+
 /* 
    값을 복사하고 변경 했을 때, 다른 값에 전혀 영향을 주지 않는다. 
    이처럼 두 변수가 완전히 독립성을 갖을 때, 
