@@ -1,5 +1,5 @@
-/*  Writer: EvenNewbieImthePro 
-    Date: 25, May, 2020
+/*  Writer: HandsomeChoco  
+    Date: 26, May, 2020
     Content: Implement sorting element by sorting algorithms. 
 */
 

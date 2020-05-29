@@ -1,3 +1,7 @@
+/*  Writer: EvenNewbieImthePro 
+    Date: 25, May, 2020
+    Content: How to judge Even and Odd 
+*/
 function getEvenOrOdd(num) {
     if(isNaN(num)===false) {
         if( num < 0 ) {
