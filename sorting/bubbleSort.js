@@ -19,6 +19,6 @@ function BubbleSort(array) {
         }
     }
     console.log(`정렬 후: ${arrayNeedSort}`);
-    return;
+    return arrayNeedSort;
 }
 BubbleSort(input);

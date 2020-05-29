@@ -11,17 +11,22 @@ function SelectionSort(array) {
 
     for(var i=0; i<arrayNeedSort.length; i++) {
         var min = arrayNeedSort[i];
-        for(var j=i; j<arrayNeedSort.length; j++) {
+
+        for(var j=i+1; j<arrayNeedSort.length; j++) {
             if(min > arrayNeedSort[j]) {
                 min = arrayNeedSort[j];
-                var temp = arrayNeedSort[i];
-                arrayNeedSort[i] = min;
-                arrayNeedSort[j] = temp;
+               
             }
-
+            console.log(j)
         }
-        console.log(arrayNeedSort);
+        // if(arrayNeedSort !==i) {
+
+        // }
+        // var temp = arrayNeedSort[i];
+        // arrayNeedSort[i] = min;
+        // arrayNeedSort[j] = temp;
+        // console.log('----------')
     }
 }
 
-SelectionSort(input);
+
