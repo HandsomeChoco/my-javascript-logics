@@ -1,7 +1,8 @@
-/*  Writer: EvenNewbieImthePro 
+/*  Writer: HandsomeChoco
     Date: 25, May, 2020
-    Content: How to judge Even and Odd 
+    Content: How to get max value of an Array
 */
+
 function getEvenOrOdd(num) {
     if(isNaN(num)===false) {
         if( num < 0 ) {

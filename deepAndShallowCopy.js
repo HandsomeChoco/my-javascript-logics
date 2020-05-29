@@ -1,7 +1,8 @@
-/*  Writer: EvenNewbieImthePro 
+/*  Writer: HandsomeChoco
     Date: 25, May, 2020
-    Content: learn about different between shallow copy and deep copy
+    Content: Learn about different between deep copy and shallow copy.
 */
+
 
 /* 
    값을 복사하고 변경 했을 때, 다른 값에 전혀 영향을 주지 않는다. 
@@ -34,6 +35,7 @@ originalArr[0] = 100;
 console.log(originalArr); // [100, 2, 3, 4]
 console.log(newArr); // [100, 2, 3, 4]
 
+
 function cloneObj(obj) {
     var output = {};
     for(var i=0 in obj) {
@@ -41,6 +43,8 @@ function cloneObj(obj) {
     }
     return output;
 }
+
+
 
 var originalObj = { a: 10, b: 20 };
 var referenced = cloneObj(originalObj);
@@ -62,4 +66,3 @@ var tony = new Person('Tony', 'Stark', 53, 173);
 var tonyClone = tony;
 console.log(tony);
 tony.height =  '173cm';
-console.log(tonyClone, tony);
