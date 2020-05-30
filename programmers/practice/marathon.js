@@ -8,6 +8,7 @@ function solution(participant, completion) {
             return;
         }
     }
+    
     var participant = participant;
     var completion = completion;
     var answer = '';
