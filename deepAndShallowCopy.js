@@ -66,6 +66,3 @@ var tony = new Person('Tony', 'Stark', 53, 173);
 var tonyClone = tony;
 console.log(tony);
 tony.height =  '173cm';
-console.log(tonyClone, tony);
-
-module.exports;

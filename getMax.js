@@ -11,7 +11,7 @@ function getMax() {
         if(max<numbers[i]) {
             max = numbers[i];
         }
-        console.log(`${i}회차 최대값: ${max}`)
+        console.log(`${i+1}회차 최대값: ${max}`)
     }
     return console.log(max);
 }

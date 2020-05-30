@@ -1,11 +1,10 @@
-/*  Writer: HandsomeChoco 
-    Date: 25, May, 2020
+   Content: Implement sorting element by sorting algorithms. 
     Content: Implement sorting element by bubble sort algorithm
 */
-const input = [6,1,3,2,4,5,10,9,7];
-
-lib.cloneObj(input);
-
+onst input = [6,1,3,2,4,5,10,9,7];
+const input = [6,1,3,2,4];
+ib.cloneObj(input);
+unction bubbleSort(array) {
 function BubbleSort(array) {
     var arrayNeedSort = array;
 
