@@ -10,8 +10,9 @@ function solution(n) {
         for(let j=2; j<i; j++) {
             if(i%j===0) {
                 isPrimeNum = false;
-                continue;
-            }                                                                                                                  
+                break;
+            }                      
+            continue;                                                                                            
         }
         if(isPrimeNum) {
             answer.push(i);
@@ -20,3 +21,35 @@ function solution(n) {
     console.log(answer);
     return answer.length;
 }
+
+/* 
+    이 알고리즘은 일부 테스트 케이스를 통과하지 못한다. 
+    그래서 '에라스토테네스의 체' 라고 소수를 찾는 방법을 사용해 구현하기로 했다.
+*/
+
+function PrimeNumFilter(num) {
+    let array = [];
+    // 
+    for(let i=0; i<num+1; i++) {
+        array.push(true);
+    }
+    
+    console.log(array, array.length);
+
+    for(let i=2; i*i<=num; i++) {
+        if(array[i]) {
+            for(let j=i*i; j<=num; j+=i) {
+                array[j]=false;
+            }
+        }
+    }
+    array.splice(0,2, false, false);
+
+    const result = array.filter((value) => {
+        return value !== false;
+    })
+    console.log(array)
+    return result.length;
+}
+
+PrimeNumFilter(50)
