@@ -29,13 +29,16 @@ function solution(n) {
 
 function PrimeNumFilter(num) {
     let array = [];
-    // 
+
+    /*  num 의 크기와 동일한 배열 생성 및 원소 i 푸쉬; */
+
     for(let i=0; i<num+1; i++) {
-        array.push(true);
+        array.push(i);
     }
     
-    console.log(array, array.length);
-
+    /*  num 의 제곱근까지만 계산해 불필요 반복 최소화.
+        array[i] 가 소수면, 반복문 진행
+    */
     for(let i=2; i*i<=num; i++) {
         if(array[i]) {
             for(let j=i*i; j<=num; j+=i) {
@@ -49,7 +52,8 @@ function PrimeNumFilter(num) {
         return value !== false;
     })
     console.log(array)
+    console.log(result.length);
     return result.length;
 }
 
-PrimeNumFilter(50)
+PrimeNumFilter(1000000)
