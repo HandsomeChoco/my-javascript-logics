@@ -46,14 +46,15 @@ function PrimeNumFilter(num) {
             }
         }
     }
+
+    // 0,1 은 소수가 아니기 때문에 false 로 변환 
     array.splice(0,2, false, false);
 
     const result = array.filter((value) => {
         return value !== false;
     })
     console.log(array)
-    console.log(result.length);
     return result.length;
 }
 
-PrimeNumFilter(1000000)
+PrimeNumFilter(25)
