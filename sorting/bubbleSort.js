@@ -1,10 +1,10 @@
-   Content: Implement sorting element by sorting algorithms. 
+/*
+    Writer: HandsomeChoco
+    Content: Implement sorting element by sorting algorithms. 
     Content: Implement sorting element by bubble sort algorithm
 */
-onst input = [6,1,3,2,4,5,10,9,7];
-const input = [6,1,3,2,4];
-ib.cloneObj(input);
-unction bubbleSort(array) {
+const input = [6,1,3,2,4,5,10,9,7];
+
 function BubbleSort(array) {
     var arrayNeedSort = array;
 
