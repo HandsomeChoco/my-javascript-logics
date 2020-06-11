@@ -9,19 +9,20 @@ function solution(board, moves) {
     
     let dolls = [];
     let answer = 0;
+
+    // 헷갈리니까 moves 배열의 값을 1씩 빼고 시작.
     for(let i=0; i<moves.length; i++) {
         moves[i] = moves[i]-1;
     }
 
     moves.map((data, index) => {
-        let xPosition = board[data];
-        if(xPosition[xPosition.length-1]) {
-            dolls.push(xPosition[xPosition.length-1]);
-            xPosition.pop();
-        }  
+        let pick = board[data];
+        if(pick[pick.length-1]) {
+            console.log(`before push to doll: ${dolls}`)
+            dolls.push(pick[pick.length-1]);
+            pick.pop();
+        }
     })
-
-    
     return answer;
 }
-solution([[0, 0, 0, 0, 0], [0, 0, 1, 0, 3], [0, 2, 5, 0, 1], [4, 2, 4, 4, 2], [3, 5, 1, 3, 1]], [1, 5, 3, 5, 1, 2, 1, 4])
+solution([[0,0,0,0,0],[0,0,1,0,3],[0,2,5,0,1],[4,2,4,4,2],[3,5,1,3,1]], [1,5,3,5,1,2,1,4])
